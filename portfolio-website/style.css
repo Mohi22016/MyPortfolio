@@ -1,0 +1,58 @@
+/* General font and smooth section styling */
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1f2937; /* Tailwind's text-gray-800 */
+}
+
+/* Responsive buttons in hero */
+@media (max-width: 640px) {
+  .hero-buttons a {
+    display: block;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Education slide responsiveness */
+@media (max-width: 768px) {
+  .education-slide {
+    padding: 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Footer font size for small screens */
+@media (max-width: 600px) {
+  footer p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-buttons a,
+  #contact a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
